@@ -7,6 +7,7 @@ import "./App.css";
 const App = () => {
     return (
         <div>
+            <h1>Student Name: Heru Rubin</h1>
             <div className="App-component">
                 <header className="App-header">
                     Media Buttons Component (Example)
@@ -17,9 +18,10 @@ const App = () => {
             </div>
 
             <div className="App-component">
-                <header className="App-header">Login form component (TODO)</header>
+                <header className="App-header">Login form component </header>
                 <div className="App-content">
                     <LoginForm
+                        actionPath="/login"
                         inputsList={
                             [
                                 {

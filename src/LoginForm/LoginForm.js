@@ -1,7 +1,8 @@
 import "./LoginForm.css";
 import Input from "../components/Input/Input";
+import Button from "../components/Button/Button";
 
-const LoginForm = ({inputsList }) => {
+const LoginForm = ({inputsList, actionPath }) => {
 
   const getInputslist = ()=>{
     let inputs = [];
@@ -18,9 +19,14 @@ const LoginForm = ({inputsList }) => {
   }
 
   return (
-      <div className="login-container">
+      <form className="login-container" action={actionPath}>
         {getInputslist()}
-    </div>
+       <div>
+         <input name="rememberMe" type="checkbox"/>
+         <label htmlFor="rememberMe" >Remember Me</label>
+       </div>
+        <input type="submit" value="Submit"/>
+    </form>
   );
 };
 
