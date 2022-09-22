@@ -1,0 +1,30 @@
+.pager-component{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.pager-component li{
+    font-size: 1.5vw;
+    padding: 1.5vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    position: relative;
+    user-select: none;
+}
+
+.pager-component li:after{
+    content:"";
+    position: absolute;
+    pointer-events: none;
+    inset: 35% 0;
+    border-right: 1px solid #c5c1f3;
+}
+
+.pager-component li:hover{
+    background-color: antiquewhite;
+    transition: background-color 0.5s;
+}
+.pager-component li:active{
+    box-shadow: 1px 2px 11px 4px rgba(0,0,0,0.13) inset;;
+}
